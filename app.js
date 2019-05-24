@@ -2,9 +2,44 @@ var express = require("express"),
     app=express(),
     bodyparser=require("body-parser"),
     methodoverride=require("method-override"),
+    ejs = require('ejs'),
     expresssanitizer= require("express-sanitizer");
 
+    function convertArrayOfObjectsToCSV(args) {
+        var result, ctr, keys, columnDelimiter, lineDelimiter, data;
+
+        data = args.data || null;
+        if (data == null || !data.length) {
+            return null;
+        }
+
+        columnDelimiter = args.columnDelimiter || ',';
+        lineDelimiter = args.lineDelimiter || '\n';
+
+        keys = Object.keys(data[0]);
+
+        result = '';
+        result += keys.join(columnDelimiter);
+        result += lineDelimiter;
+
+        data.forEach(function(item) {
+            ctr = 0;
+            keys.forEach(function(key) {
+                if (ctr > 0) result += columnDelimiter;
+
+                result += item[key];
+                ctr++;
+            });
+            result += lineDelimiter;
+        });
+
+        return result;
+    }
+
+// PORT
 var PORT = process.env.PORT || 3000;
+
+// Write and read csv
 
 const csv = require('csv-parser');
 const fs = require('fs');
@@ -58,7 +93,10 @@ app.get("/",function(req,res){
       console.log('Loading homepage');
       readData = JSON.stringify(readData);
       readData = JSON.parse(readData);
-      res.render('home',{readData:readData});
+      var csv = convertArrayOfObjectsToCSV({
+            data: readData
+        });
+      res.render('home',{readData:readData,csv:csv});
     });
 });
 
