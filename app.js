@@ -62,10 +62,6 @@ const seedData = [
     Name: 'Clair',
     Surname: 'White',
     Age: 33
-  }, {
-    Name: 'Fancy',
-    Surname: 'Brown',
-    Age: 78
   }
 ];
 csvWriter
@@ -118,18 +114,18 @@ app.post("/",function(req,res){
       readData.push(row)
     })
     .on('end', () => {
-      console.log(readData);
       readData.push(req.body.data)
-      console.log(readData);
       console.log('Posting to csv');
       readData = JSON.stringify(readData);
       readData = JSON.parse(readData);
-      console.log(`After PArsing ${readData}`);
+      var csv = convertArrayOfObjectsToCSV({
+            data: readData
+        });
       csvWriter
         .writeRecords(writeData)
         .then(()=> {
           console.log('Posting Completed');
-          res.render('home',{readData:readData});
+          res.render('home',{readData:readData,csv:csv});
         });
     });
 
