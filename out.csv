@@ -1,4 +1,9 @@
-Name,Surname,Age
-John,Snow,26
-Clair,White,33
-wqeqwe,2313,123123
+title,subtitle,image,url,id,price,holidayTag,holidayType,locationTag
+Bentota Getaway,Book 3 Nights 4 Days at Bentota at price 77 BHD(Price per person),https://goholidays.gosaibitravel.com/holidays_uploads/images/holiday_1/thumbnail/big_club-bentota.jpg,https://goholidays.gosaibitravel.com/tours/bentota-getaway/1,1,77 BHD, Corporate,Romantic, Bentota 
+Serene Switzerland ,Book 6 Nights 7 Days at Lungern at price 454 BHD(Price per person),https://goholidays.gosaibitravel.com/holidays_uploads/images/holiday_88/thumbnail/16871_1_jungfraujoch.jpg,https://goholidays.gosaibitravel.com/tours/serene-switzerland-/88,88,454 BHD, NRI Specials,Adventure, Lungern 
+Austrian Alpine Glory,Book 7 Nights 8 Days at Innsbruck at price 367 BHD(Price per person),https://goholidays.gosaibitravel.com/holidays_uploads/images/holiday_32/thumbnail/Zell%20am%20see.jpg,https://goholidays.gosaibitravel.com/tours/austrian-alpine-glory/32,32,367 BHD, Signature Holidays,xyz, Innsbruck 
+Sharm El Sheikh Getaway,Book 3 Nights 4 Days at Sharm El Sheikh at price 60 BHD(Price per person),https://goholidays.gosaibitravel.com/holidays_uploads/images/holiday_10/thumbnail/Sharm%20el%20Sheikh.jpg,https://goholidays.gosaibitravel.com/tours/sharm-el-sheikh-getaway/10,10,60 BHD, Corporate,Nature, Sharm El Sheikh 
+Canadian East Coast,Book 7 Nights 8 Days at Niagara Falls at price 522 BHD(Price per person),https://goholidays.gosaibitravel.com/holidays_uploads/images/holiday_33/thumbnail/canada%201.jpg,https://goholidays.gosaibitravel.com/tours/canadian-east-coast/33,33,522 BHD, Self Drive,Beaches, Niagara Falls 
+Around The Rockies,Book 6 Nights 7 Days at Calgary at price 583 BHD(Price per person),https://goholidays.gosaibitravel.com/holidays_uploads/images/holiday_34/thumbnail/can3.jpg,https://goholidays.gosaibitravel.com/tours/around-the-rockies/34,34,583 BHD, Self Drive,Adventure, Calgary 
+Bosnia Experience,Book 6 Nights 7 Days at Sarajevo at price 265 BHD(Price per person),https://goholidays.gosaibitravel.com/holidays_uploads/images/holiday_42/thumbnail/sarjevo1.jpg,https://goholidays.gosaibitravel.com/tours/bosnia-experience/42,42,265 BHD, Signature Holidays,Wildlife, Sarajevo 
+Best Of Bali,Book 9 Nights 10 Days at Kuta at price 585 BHD(Price per person),https://goholidays.gosaibitravel.com/holidays_uploads/images/holiday_44/thumbnail/bali1.jpg,https://goholidays.gosaibitravel.com/tours/best-of-bali/44,44,585 BHD, Signature Holidays,Nature, Kuta 
